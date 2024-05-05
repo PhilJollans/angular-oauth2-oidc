@@ -10,6 +10,27 @@
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:4200",
             "webRoot": "${workspaceFolder}"
-        }
+        },
+        {
+          "name": "Launch Quickstart Demo",
+          "type": "chrome",
+          "request": "launch",
+          "url": "http://localhost:4200",
+          "preLaunchTask": "build-quickstart-demo"
+        },
+        {
+          "name": "Launch Quickstart Standalone",
+          "type": "chrome",
+          "request": "launch",
+          "url": "http://localhost:4200",
+          "preLaunchTask": "build-quickstart-standalone"
+        },
+        {
+          "name": "Launch Sample",
+          "type": "chrome",
+          "request": "launch",
+          "url": "http://localhost:4200",
+          "preLaunchTask": "build-sample"
+        },
     ]
 }

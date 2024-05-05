@@ -5,6 +5,8 @@
   "scripts": {
     "release": "standard-version",
     "ng": "ng",
+    "serve-quickstart": "ng serve quickstart-demo --open",
+    "serve": "ng serve",
     "start": "ng serve --project sample -o",
     "build": "npm run prettier && ng build --configuration production --project lib && npm run copy:readme && npm run copy:license && npm run docs",
     "build:jwks": "npm run prettier && ng build angular-oauth2-oidc-jwks --ts-config tsconfig.npm.json && npm run copyfiles:jwks",

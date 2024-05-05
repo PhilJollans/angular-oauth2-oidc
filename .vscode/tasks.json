@@ -13,6 +13,76 @@
                 "kind": "build",
                 "isDefault": true
             }
-        }
+        },
+        {
+          "label": "build-quickstart-demo",
+          "type": "npm",
+          "script": "serve -- quickstart-demo",
+          "isBackground": true,
+          "problemMatcher": {
+            "owner": "typescript",
+            "pattern": "$tsc",
+            "background": {
+              "activeOnStart": true,
+              "beginsPattern": {
+                "regexp": "(.*?)"
+              },
+              "endsPattern": {
+                "regexp": "bundle generation complete"
+              }
+            }
+          }
+        },
+        {
+          "label": "build-quickstart-standalone",
+          "type": "npm",
+          "script": "serve -- quickstart-standalone",
+          "isBackground": true,
+          "problemMatcher": {
+            "owner": "typescript",
+            "pattern": "$tsc",
+            "background": {
+              "activeOnStart": true,
+              "beginsPattern": {
+                "regexp": "(.*?)"
+              },
+              "endsPattern": {
+                "regexp": "bundle generation complete"
+              }
+            }
+          }
+        },
+        {
+          "label": "build-sample",
+          "type": "npm",
+          "script": "serve -- sample",
+          "isBackground": true,
+          "problemMatcher": {
+            "owner": "typescript",
+            "pattern": "$tsc",
+            "background": {
+              "activeOnStart": true,
+              "beginsPattern": {
+                "regexp": "(.*?)"
+              },
+              "endsPattern": {
+                "regexp": "bundle generation complete"
+              }
+            }
+          }
+        },
+        // {
+        //   "label": "build-quickstart",
+        //   "type": "npm",
+        //   //"script": "serve-quickstart",
+        //   //"script": "serve -- quickstart-demo -- --open",
+        //   "script": "serve -- quickstart-demo",
+        //   "path": "projects/quickstart-demo",
+        //   "group": {
+        //     "kind": "build"
+        //   },
+        //   "problemMatcher": "$tsc-watch",
+        //   "isBackground": true
+        // }
     ]
 }
